@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.6.3/dist/muuri.min.js"></script>
+    <title>Trelloclone</title>
+  </head>
+  <body>
+    <header>
+      <h1>trelloclone</h1>
+      <button class="pressthis">+</button>
+    </header>
+
+    <div class="board">
+      <div class="board-column todo">
+        <div class="board-column-header">To do</div>
+        <div class="board-column-content-wrapper">
+          <div class="board-column-content">
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>1</div>
+            </div>
+
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>2</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>3</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>4</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="board-column working">
+        <div class="board-column-header">In progress</div>
+        <div class="board-column-content-wrapper">
+          <div class="board-column-content">
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>6</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>7</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>8</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>9</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="board-column done">
+        <div class="board-column-header">Done</div>
+        <div class="board-column-content-wrapper">
+          <div class="board-column-content">
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>11</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>12</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>13</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>14</div>
+            </div>
+            <div class="board-item">
+              <div class="board-item-content"><span>Item #</span>15</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <article class="popup superhero">
+      <form>
+        <label class="close">X</label>
+        <label>
+          Real name
+          <input type="password" name="real_name" required />
+        </label>
+        <label>
+          Alias
+          <input type="text" name="alias" required />
+        </label>
+
+        <label>
+          Date of birth
+          <input type="date" name="date" required />
+        </label>
+
+        <label>
+          Enemies
+          <input type="number" name="enemies" value="0" />
+        </label>
+
+        <fieldset>
+          <ul>
+            <li>
+              <label for="powers">Choose powers:</label>
+              <select id="power1" name="powers">
+                <option value="fly">Flying</option>
+                <option value="run">Fast as Lightning</option>
+                <option value="elastic">Elastic</option>
+                <option value="vanish">Vanish</option>
+              </select>
+              <label for="powers">Choose powers:</label>
+              <select id="power2" name="powers">
+                <option value="run">Fast as Lightning</option>
+                <option value="elastic">Elastic</option>
+                <option value="fly">Flying</option>
+                <option value="vanish">Vanish</option>
+              </select>
+              <label for="powers">Choose powers:</label>
+              <select id="power3" name="powers">
+                <option value="laser">Laser Sight</option>
+                <option value="run">Fast as Lightning</option>
+                <option value="elastic">Elastic</option>
+                <option value="fly">Flying</option>
+                <option value="vanish">Vanish</option>
+              </select>
+              <label for="powers">Choose powers:</label>
+              <select id="power4" name="powers">
+                <option value="vanish">Vanish</option>
+                <option value="run">Fast as Lightning</option>
+                <option value="elastic">Elastic</option>
+                <option value="fly">Flying</option>
+              </select>
+              <label for="powers">Choose powers:</label>
+              <select id="power5" name="powers">
+                <option value="elastic">Elastic</option>
+                <option value="run">Fast as Lightning</option>
+                <option value="fly">Flying</option>
+                <option value="vanish">Vanish</option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+
+        <input type="color" id="favcolor" name="favcolor" value="#ACD5B8" /><br /><br />
+        <input id="submitbtn" type="submit" value="save" />
+        <!--   <button class="savebtn">Save</button> -->
+        <button>Delete card</button>
+      </form>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>
