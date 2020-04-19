@@ -1,12 +1,12 @@
-var itemContainers = [].slice.call(document.querySelectorAll(".board-column-content"));
-var columnGrids = [];
-var boardGrid;
+let itemContainers = [].slice.call(document.querySelectorAll(".board-column-content"));
+let columnGrids = [];
+let boardGrid;
 
 // Define the column grids so we can drag those
 // items around.
 itemContainers.forEach(function (container) {
   // Instantiate column grid.
-  var grid = new Muuri(container, {
+  let grid = new Muuri(container, {
     items: ".board-item",
     layoutDuration: 400,
     layoutEasing: "ease",
