@@ -151,11 +151,24 @@
         </fieldset>
 
         <input type="color" id="favcolor" name="favcolor" value="#ACD5B8" /><br /><br />
-        <input id="submitbtn" type="submit" value="save" />
+        <input id="submitbtn" type="submit" value="save" style="transform: scale(1.5); border: none; background-color: transparent;" />
         <!--   <button class="savebtn">Save</button> -->
         <button>Delete card</button>
       </form>
+      <!-- template for saved form -->
+      <template>
+        <article>
+          <header>
+            <h2>ALIAS</h2>
+            <h3>a.k.a</h3>
+          </header>
+          <h3>Powers</h3>
+          <ul></ul>
+        </article>
+      </template>
+      <div id="herolist"></div>
     </article>
     <script src="script.js"></script>
+    <script src="apisscript.js"></script>
   </body>
 </html>
